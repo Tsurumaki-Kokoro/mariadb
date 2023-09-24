@@ -22,5 +22,6 @@ ENV MYSQL_PASSWORD=mypassword
 COPY ./startup.sh /startup.sh
 RUN chmod +x /startup.sh
 
+EXPOSE 3306
 # 启动 MariaDB 服务器
 CMD ["/startup.sh"]
