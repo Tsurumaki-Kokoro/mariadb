@@ -27,5 +27,6 @@ jobs:
     
     - name: Build and push Docker image
       run: |
-        docker build -t tr4nce/mariadb:lastest .
-        docker push tr4nce/mariadb:lastest
+        docker build -t tr4nce/mariadb:V1.2 -t tr4nce/mariadb:latest .
+        docker push tr4nce/mariadb:V1.2
+        docker push tr4nce/mariadb:latest
